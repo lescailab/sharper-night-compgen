@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+textarea {
+    font-family: monospace;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#protein_output {
+    font-weight: bold;
+    white-space: pre-wrap;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 4px;
+}
