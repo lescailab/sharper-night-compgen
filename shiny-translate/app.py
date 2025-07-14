@@ -3,17 +3,20 @@ from Bio.Seq import Seq
 
 app_ui = ui.page_fluid(
     ui.include_css("www/styles.css"),
-    ui.h2("DNA/RNA to Protein Translator"),
-    ui.p("Paste your DNA or RNA sequence below:"),
-    ui.input_text_area(
-        "sequence",
-        label="",
-        placeholder="Enter DNA or RNA sequence here",
-        rows=6,
+    ui.div(
+        ui.h2("DNA/RNA to Protein Translator"),
+        ui.p("Paste your DNA or RNA sequence below:"),
+        ui.input_text_area(
+            "sequence",
+            label="",
+            placeholder="Enter DNA or RNA sequence here",
+            rows=6,
+        ),
+        ui.br(),
+        ui.h4("Translated Protein:"),
+        ui.output_text_verbatim("protein_output"),
+        class_="translator-card",
     ),
-    ui.br(),
-    ui.h4("Translated Protein:"),
-    ui.output_text_verbatim("protein_output"),
     ui.tags.footer(
         ui.p(
             "Powered by Biopython & Shiny for Python",
